@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amay Luna | Happy Birthday ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* --- Reset --- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;overflow-x:hidden;background:#0b0c10;color:#fff;}
+
+/* --- Section Layout --- */
+section{
+  min-height:100vh;
+  padding:50px 20px;
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+section.active{display:flex;}
+h1,h2{font-family:'Orbitron',sans-serif;margin-bottom:15px;}
+p{max-width:750px;line-height:1.7;font-size:1.1rem;margin-bottom:20px;}
+button{
+  padding:12px 28px;
+  border:none;
+  border-radius:40px;
+  background:linear-gradient(45deg,#ff4d6d,#ffb703);
+  color:#000;
+  font-weight:600;
+  font-size:1rem;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(255,77,109,0.5);
+  transition:0.3s;
+}
+button:hover{transform:scale(1.05);}
+
+/* --- Images --- */
+img{max-width:80%;border-radius:20px;box-shadow:0 0 25px rgba(255,255,255,0.3);margin:20px 0;}
+
+/* --- Pixel / Text Effects --- */
+.pixel{font-family:monospace;background:#111;padding:20px;border-radius:15px;box-shadow:0 0 25px rgba(0,255,255,0.2);margin:20px 0;}
+
+/* --- Glowing Text --- */
+.glow{text-shadow:0 0 15px #ff4d6d;}
+
+/* --- Hearts Animation --- */
+.hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.heart{position:absolute;font-size:22px;animation:float 6s linear infinite;}
+@keyframes float{
+  0%{transform:translateY(100vh);opacity:0}
+  50%{opacity:1}
+  100%{transform:translateY(-10vh);opacity:0}
+}
+
+/* --- Background Gradient Animations --- */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
+  background-size:600% 600%;
+  animation:bgAnimate 20s ease infinite;
+  z-index:-1;
+}
+@keyframes bgAnimate{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* --- Mobile Friendly --- */
+@media only screen and (max-width:480px){
+  p{font-size:1rem;}
+  button{padding:10px 22px;font-size:0.95rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- Page 1: Birthday Wish -->
+<section class="active">
+<h1 class="glow">Happy Birthday, Amay Luna 🎂✨</h1>
+<p>Today is not just your birthday. It is the day the universe smiled because you exist. You are my warmth, my calm, my safe place, my forever thought. Every heartbeat whispers your name. Heute bist du mein Glück 💕</p>
+<button onclick="next()">Tap to continue 💖</button>
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+</section>
+
+<!-- Page 2: Loving Words -->
+<section>
+<h2>Words I Carry for You 🌙</h2>
+<p>If love had a language it would speak in your smile. If peace had a form it would look like you resting happily. You are not someone I love, you are where my love lives. Ich liebe dich tief und ehrlich 💕</p>
+<button onclick="next()">Next ✨</button>
+</section>
+
+<!-- Page 3: Your Smile -->
+<section>
+<h2>Your Smile 💫</h2>
+<img src="amay-1.jpeg" alt="Amay Luna">
+<p>This smile fixes days, heals distance, and reminds me what forever feels like.</p>
+<button onclick="next()">Continue 💗</button>
+</section>
+
+<!-- Page 4: Little Love Quotes -->
+<section>
+<h2>Little Love Quotes 💕</h2>
+<p>“Some people are magic. You are my favorite spell.”<br>“Loving you feels like coming home.”<br>“Even time pauses when I think of you.”</p>
+<button onclick="next()">More surprises 🎁</button>
+</section>
+
+<!-- Page 5: Minecraft World -->
+<section>
+<h2>Minecraft World 🧱💚</h2>
+<p>If love were a Minecraft world, you would be the Master Builder, turning empty space into beauty block by block, heart by heart. I’d protect the world to watch you build in it.</p>
+<div class="pixel">
+[❤] Player Amay_Luna joined the server<br>[✔] World feels warmer
+</div>
+<button onclick="next()">Next block ➡️</button>
+</section>
+
+<!-- Page 6: Cat Love -->
+<section>
+<h2>Cat Love 🐱💞</h2>
+<p>Your heart is gentle. The way you love your cats shows me everything about your soul: soft, kind, beautiful.</p>
+<button onclick="next()">Purr 🐾</button>
+</section>
+
+<!-- Page 7: Distance -->
+<section>
+<h2>Distance 🌍</h2>
+<p>Germany and Pakistan are just coordinates. Love doesn’t measure distance in kilometers; it measures connection. Ours is unbreakable.</p>
+<button onclick="next()">Keep going 💫</button>
+</section>
+
+<!-- Page 8: My Dream (Photo you uploaded) -->
+<section>
+<h2>My Dream 🤍</h2>
+<img src="together1.jpg.jpeg" alt="Us together">
+<p>Look at us. Not posing. Not performing. Just existing together. This is how love should feel: soft, calm, safe. When I look at this I see my future, my peace, my home. You are where my heart rests. This is my dream.</p>
+<button onclick="next()">Hold this moment 🤍</button>
+</section>
+
+<!-- Page 9: Awake at 4:00 AM -->
+<section>
+<h2>Still Awake for You 🌌</h2>
+<p>It is 4:00 AM, early morning. I haven’t slept. I stayed awake to write this code and make this surprise for you, my love, to wish you the best birthday before everyone else. Every line, every animation, every word is for you.</p>
+<button onclick="next()">Next 💖</button>
+</section>
+
+<!-- Page 10: Planning & Longing -->
+<section>
+<h2>From My Heart 💞</h2>
+<p>I have been planning this for the last 20 days. I wish I could come to you to celebrate your birthday in person, but soon I will come. We will celebrate every day of our life together like your birthday. Du bist mein Leben, mein Herz ❤️</p>
+<button onclick="next()">Almost there ✨</button>
+</section>
+
+<!-- Page 11: Quiet Truth -->
+<section>
+<h2>Quiet Truth 🤍</h2>
+<p>Some loves are loud. Some are gentle. Mine for you is steady, certain, forever-growing. Du bist mein Leben.</p>
+<button onclick="next()">One last page 💞</button>
+</section>
+
+<!-- Page 12: Final Love Bite -->
+<section>
+<h1 class="glow">Live. Smile. Be Happy. 🎉</h1>
+<p>Today is about you. Laugh loudly. Smile endlessly. Eat cake without counting. Feel loved because you truly are. Happy Birthday, my future wife. Alles Gute zum Geburtstag, mein Herz ❤️</p>
+<button onclick="restart()">Replay 💫</button>
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+</audio>
+</section>
+
+<script>
+let pages=document.querySelectorAll("section");
+let i=0;
+function next(){
+  pages[i].classList.remove("active");
+  i++;
+  if(i>=pages.length)i=pages.length-1;
+  pages[i].classList.add("active");
+}
+function restart(){
+  pages[i].classList.remove("active");
+  i=0;
+  pages[i].classList.add("active");
+}
+
+/* Heart animation */
+const hearts=document.querySelector(".hearts");
+setInterval(()=>{
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerText="💖";
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDuration=4+Math.random()*4+"s";
+  hearts.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+},400);
+</script>
+</body>
+</html>
